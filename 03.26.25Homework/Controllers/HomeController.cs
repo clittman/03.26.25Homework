@@ -10,6 +10,7 @@ namespace _03._26._25Homework.Controllers
 
         public IActionResult Index(int page = 1)
         {
+            int x = 0;
             BlogPostsDb db = new(_connectionString);
 
             int count = db.GetCount();
